@@ -158,6 +158,10 @@ export function decodeKey(buffer: Uint8Array, code: string): KeyPressEvent {
           case "[E":
             keyPress.key = "clear";
             break;
+          case "[Z":
+            keyPress.key = "tab";
+            keyPress.shift = true;
+            break;
         }
       }
       break;
